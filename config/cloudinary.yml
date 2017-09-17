@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: framgiaaaa
+  api_key: '691358393353688'
+  api_secret: 4Im_QmzC9WFfBys_dhkBpGiU0qw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: framgiaaaa
+  api_key: '691358393353688'
+  api_secret: 4Im_QmzC9WFfBys_dhkBpGiU0qw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: framgiaaaa
+  api_key: '691358393353688'
+  api_secret: 4Im_QmzC9WFfBys_dhkBpGiU0qw
+  enhance_image_tag: true
+  static_image_support: false

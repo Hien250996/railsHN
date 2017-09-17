@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
 
+<div class="col-md-9">
+   <%= image_tag(@comment.picture_url(:thumb)) if @comment.picture.present? %>
+  </div>
 <p>
   <strong>User name:</strong>
   <%= @comment.user_name %>

@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Comments</h1>
-
-<table>
+<%= link_to 'New Comment', new_comment_path, class: "btn btn-success" %>
+<table class="table table-inverse">
   <thead>
     <tr>
-      <th>User name</th>
+      <th scope="row">User name</th>
       <th>Body</th>
+      <th>Image</th>
       <th>Idea</th>
       <th colspan="3"></th>
     </tr>
@@ -17,7 +18,9 @@
       <tr>
         <td><%= comment.user_name %></td>
         <td><%= comment.body %></td>
-        
+        <td>
+           <%= image_tag comment.picture_url(:thumb), width: '100%' if comment.picture.present?%>
+        </td>      
         <td><%= comment.idea_id %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
@@ -29,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Comment', new_comment_path %>
+
